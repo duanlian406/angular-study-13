@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
@@ -7,8 +7,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    accountForm!: FormGroup
-    constructor(private fb: FormBuilder) {
+    accountForm!: UntypedFormGroup
+    constructor(private fb: UntypedFormBuilder) {
         this.accountForm = this.fb.group({ 'gender': ['indetermined'] });
     }
 }
