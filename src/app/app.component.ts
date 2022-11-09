@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	title = 'angular-study-13';
-	username = 'duanlian';
+    accountForm!: FormGroup
+    constructor(private fb: FormBuilder) {
+        this.accountForm = this.fb.group({ 'gender': ['indetermined'] });
+    }
 }

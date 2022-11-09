@@ -1,0 +1,13 @@
+{
+    "tabWidth": 4, 
+    "useTabs": true, 
+    "semi": true, 
+    "singleQuote": true, 
+    "arrowParens": "avoid", 
+    "bracketSpacing": true, 
+    "disableLanguages": ["vue"], 
+    "eslintIntegration": false, 
+    "htmlWhitespaceSensitivity": "ignore",
+    "ignorePath": ".prettierignore", 
+    "trailingComma": "es5"
+  }
